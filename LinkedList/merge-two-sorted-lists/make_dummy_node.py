@@ -25,3 +25,6 @@ class Solution:
 			tail.next = l2
 		
 		return dummy.next
+
+	
+	# reference: https://www.youtube.com/watch?v=XIdigk956u0
