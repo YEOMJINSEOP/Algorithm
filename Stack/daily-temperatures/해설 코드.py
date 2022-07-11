@@ -7,9 +7,12 @@ class Solution:
             print("cycle", (i + 1))
             print("i = ", i, "," "cur = ", cur)
             while stack and cur > temperatures[stack[-1]]: #stack이 empty면 while stack에서 false
-                last = stack.pop()
-                print("popped => ", last)
-                answer[last] = i - last
+                print("stack : ", stack)
+                top = stack.pop()
+                print("popped => ", top)
+                answer[top] = i - top
             stack.append(i)
             print("stack : ", stack)
             print("answer :", answer, " \n")
+        
+        return answer
